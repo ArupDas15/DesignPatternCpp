@@ -1,5 +1,8 @@
 Factory Method: It is a creational design patternt that provides an interface in the superclass whose implementation is provided in the subclasses that inherit from the base class. The subclasses define the implementation and the type of object that will be created. The lirary will be responsible to create the object type based on the client input and return it to the client. The client does not have to worry about how the objects are getting created. Basically, the CLIENT should **use** the FACTORY to **create** the PRODUCT. This helps in *decoupling* the creation logic from the usage logic.
 
+- Use the Factory Method when you don’t know beforehand the exact types. Therefore it’s easier to extend the product construction code independently from the rest of the code.
+- Use the Factory Method when you want to provide users of your library or framework with a way to extend its internal components.
+- Use the Factory Method when you want to save system resources by reusing existing objects instead of rebuilding them each time.
 
 The client knows that all vehicle objects are supposed to have the createVehicle() method, but exactly how it works isn’t important to the client.
 
