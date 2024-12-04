@@ -18,11 +18,12 @@ Acquring and releasing locks are expensive bacause (of system call, context swit
 
 To minimize the overhead of acquiring a lock when accessing the Singleton instance we use ```Double-checked Locking``` which ensures that the lock is only acquired once, and subsequent calls to the static function do not require locking if the instance is already created. This improves the performance.
 
-THe last thing, we need to ensure/ enforce is that users are not able to create a copy of the single object using the copy constructor neither are they able to assign singleton objects using the ```=``` copy assingment operator so that shallow copy or deep copy of data members cannot take place.
+The last thing, we need to ensure/ enforce is that users are not able to create a copy of the single object using the copy constructor neither are they able to assign singleton objects using the ```=``` copy assingment operator so that shallow copy or deep copy of data members cannot take place.
 
 
 *Singleton Pattern violates the Single Responsibility Principle* which states that a class should have only one reason to change (i.e., it should have only one responsibility) because the singleton pattern has two responsibilities — managing instance creation and offering global access. This creates a dual responsibility for the Singleton class. As a result, the class ends up doing more than one thing, which goes against SRP.
 
 # To run the code:
 ``` g++ -o singleton *.cpp```
+
 ```.\singleton```
