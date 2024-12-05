@@ -2,7 +2,7 @@ Video: https://www.youtube.com/watch?v=JxveJ1pI5fc&list=PLliXPok7ZonlZJuAN0hvUnf
 
 Refer: https://refactoring.guru/design-patterns/adapter
 
-# Adaptur Structural Design Pattern
+# Adapter Structural Design Pattern
 The adapter structural design pattern converts the interface of a class into another interface that clients expect. The adapter lets classes work together that could not otherwise because of incompatible interfaces. 
 
 **Problem Description**:
