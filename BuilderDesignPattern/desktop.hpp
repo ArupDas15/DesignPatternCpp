@@ -4,6 +4,7 @@
 #include <string>
 using namespace std;
 
+// This is the product class.
 class Desktop {
         string monitor;
         string keyboard;
