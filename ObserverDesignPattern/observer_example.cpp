@@ -39,6 +39,7 @@ class Group {
     // This is the publisher class/subject.
     private:
         // We define an array field for storing a list of references to subscriber objects 
+        // We are going to use pointer of interface class becuase the subscriber objects can be of different types (different classes) 
         list<ISubscriber*> users;
     public:
         // We create a public subsriber method so that the client can add subsribers to the list.
