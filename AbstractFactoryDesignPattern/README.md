@@ -1,5 +1,7 @@
 Video: https://www.youtube.com/watch?v=17i8a-pUtx8&list=PLliXPok7ZonlZJuAN0hvUnf5ovFepjxU0&index=6
 
+Refer: https://refactoring.guru/design-patterns/abstract-factory
+
 # Abstract Factory Creational Design Pattern
 The factory design pattern created concrete classes/ objects. The Abstract Factory design pattern will create factories that will create concrete objects.
 
