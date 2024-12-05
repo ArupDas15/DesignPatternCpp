@@ -10,3 +10,22 @@ We will be understanding Abstract Factory Creational Design Patterns using the b
 ![image](https://github.com/user-attachments/assets/e22a855a-391c-4a44-884b-636e3573b733)
 
 ![image](https://github.com/user-attachments/assets/1bd5a141-044d-4312-9f0b-e11f7643f358)
+
+# How do I execute the code and code output?
+```
+DesignPatternsinCPP\DesignPatternCpp\AbstractFactoryDesignPattern> g++ -o abstract_factory client.cpp
+DesignPatternsinCPP\DesignPatternCpp\AbstractFactoryDesignPattern> ./abstract_factory
+```
+
+**OUTPUT**:
+```
+Enter your machine OS 
+windows
+Windows button pressed.
+Showing Windows TextBox.
+DesignPatternCpp\AbstractFactoryDesignPattern> ./abstract_factory
+Enter your machine OS 
+mac
+Mac button pressed.
+Showing Mac TextBox.
+```
