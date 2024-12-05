@@ -2,15 +2,19 @@ Video: https://www.youtube.com/watch?v=gbTWHeGUeXs&list=PLliXPok7ZonlZJuAN0hvUnf
 
 # Introduction to Observer Behavorial Design Pattern
 
-The main motivation behind using Observer Behavorial Design Pattern is, "Whenever there is a data change happening and lot of people have to be notified for e.g. group messaging (a new message in a group should be notified to all the group members), a new message in Slack should be notified to the user in all the user logged-in devices." 
+The main motivation behind using the Observer Behavorial Design Pattern is, "Whenever there is a data change happening and a lot of people have to be notified for e.g. group messaging (a new message in a group should be notified to all the group members), a new message in Slack should be notified to the user in all the user logged-in devices." 
 
-The concept is that, there is a publisher publishing some change and a bunch of subscribers who have subscribed to the change. The observer behvorial design pattern will *define a subscription mechanism to notify multiple objects (subscribers) about any events (change) that happen to the object they’re observing*. Thus, there is a **SUBJECT** and **SEVERAL OBSERVERS**, who will be notified if any change happens to the SUBJECT, by the mechanism (actions) defined using the observer behavorial design pattern.
+The concept is that there is a publisher publishing some change and a bunch of subscribers who have subscribed to the change. The observer behvorial design pattern will *define a subscription mechanism to notify multiple objects (subscribers) about any events (change) that happen to the object they’re observing*. Thus, there is a **SUBJECT** and **SEVERAL OBSERVERS**, who will be notified if any change happens to the SUBJECT by the mechanism (actions) defined using the observer behavorial design pattern.
 
-# How to run the code and code output?
+![image](https://github.com/user-attachments/assets/d46ae8e5-051b-47cc-a74c-bd940faee085)
+Image Source: https://refactoring.guru/design-patterns/observer
 
-```DesignPatternCpp\ObserverDesignPattern> g++ -o observer *.cpp```
+# How do I run the code and code output?
 
-```DesignPatternCpp\ObserverDesignPattern> ./observer```
+```
+DesignPatternCpp\ObserverDesignPattern> g++ -o observer *.cpp
+DesignPatternCpp\ObserverDesignPattern> ./observer
+```
 
 **OUTPUT**:
 ```
