@@ -1,4 +1,8 @@
-Factory Method: It is a creational design patternt that provides an interface in the superclass whose implementation is provided in the subclasses that inherit from the base class. The subclasses define the implementation and the type of object that will be created. The lirary will be responsible to create the object type based on the client input and return it to the client. The client does not have to worry about how the objects are getting created. Basically, the CLIENT should **use** the FACTORY to **create** the PRODUCT. This helps in *decoupling* the creation logic from the usage logic.
+Video: https://www.youtube.com/watch?v=tv54FY48Vio&list=PLliXPok7ZonlZJuAN0hvUnf5ovFepjxU0&index=3
+
+Refer: https://refactoring.guru/design-patterns/factory-method
+
+Factory Method: It is a creational design pattern that provides an interface in the superclass, whose implementation is provided in the subclasses that inherit from the base class. The subclasses define the implementation and the type of object that will be created. The library will be responsible to create the object type based on the client input and return it to the client. The client does not have to worry about how the objects are getting created. Basically, the CLIENT should **use** the FACTORY to **create** the PRODUCT. This helps in *decoupling* the creation logic from the usage logic.
 
 - Use the Factory Method when you don’t know beforehand the exact types. Therefore it’s easier to extend the product construction code independently from the rest of the code.
 - Use the Factory Method when you want to provide users of your library or framework with a way to extend its internal components.
@@ -6,6 +10,9 @@ Factory Method: It is a creational design patternt that provides an interface in
 
 The client knows that all vehicle objects are supposed to have the createVehicle() method, but exactly how it works isn’t important to the client.
 
+
+# How do I run the code and code output?
+```g++ -c car.cpp bike.cpp```
 ```ar ru vehicle_library.a vehicle_factory.o car.o bike.o```
 
 ar is a command-line tool used to create, modify, and extract from static libraries. A static library is a collection of object files that are linked into programs at compile time, rather than at runtime (which would be dynamic libraries).
@@ -21,3 +28,12 @@ After compiling client.cpp, the linker will take the resulting object file and l
 The linker will resolve any references in client.cpp to functions or classes that are defined in the static library (vehicle_library.a).
 If the vehicle_library.a contains functions or object code that client.cpp depends on, the linker will include them in the final executable (client).
 
+**OUTPUT**
+```
+DesignPatternCpp\FactoryMethod> .\smartClient
+car (Input car)
+Creating Car
+DesignPatternCpp\FactoryMethod> .\smartClient
+bike (Input bike)
+Creating Bike
+```
